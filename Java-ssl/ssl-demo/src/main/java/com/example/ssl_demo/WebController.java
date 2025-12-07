@@ -27,11 +27,13 @@ public class WebController {
     }
     
     @GetMapping("/ssl-test")
+    @ResponseBody
     public String sslTest() {
         return "Вы на защищённой странице!";
     }
     
     @GetMapping("/health")
+    @ResponseBody
     public String health() {
         return "OK";
     }
