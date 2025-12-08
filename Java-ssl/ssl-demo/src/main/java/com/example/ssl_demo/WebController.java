@@ -38,4 +38,10 @@ public class WebController {
     public String health() {
         return "OK";
     }
+
+    @GetMapping("/ping")
+    @ResponseBody
+    public String ping() {
+        return "pong " + new java.util.Date();
+}
 }
